@@ -233,6 +233,117 @@ namespace TheGovernator
 			// aapt resource value: 0x7f040000
 			public const int parent = 2130968576;
 			
+			// aapt resource value: 0x7f040016
+			public const int space1 = 2130968598;
+			
+			// aapt resource value: 0x7f04001f
+			public const int space10 = 2130968607;
+			
+			// aapt resource value: 0x7f040020
+			public const int space11 = 2130968608;
+			
+			// aapt resource value: 0x7f040021
+			public const int space12 = 2130968609;
+			
+			// aapt resource value: 0x7f040022
+			public const int space13 = 2130968610;
+			
+			// aapt resource value: 0x7f040023
+			public const int space14 = 2130968611;
+			
+			// aapt resource value: 0x7f040024
+			public const int space15 = 2130968612;
+			
+			// aapt resource value: 0x7f040025
+			public const int space16 = 2130968613;
+			
+			// aapt resource value: 0x7f040026
+			public const int space17 = 2130968614;
+			
+			// aapt resource value: 0x7f040027
+			public const int space18 = 2130968615;
+			
+			// aapt resource value: 0x7f040028
+			public const int space19 = 2130968616;
+			
+			// aapt resource value: 0x7f040017
+			public const int space2 = 2130968599;
+			
+			// aapt resource value: 0x7f040029
+			public const int space20 = 2130968617;
+			
+			// aapt resource value: 0x7f04002a
+			public const int space21 = 2130968618;
+			
+			// aapt resource value: 0x7f04002b
+			public const int space22 = 2130968619;
+			
+			// aapt resource value: 0x7f04002c
+			public const int space23 = 2130968620;
+			
+			// aapt resource value: 0x7f04002d
+			public const int space24 = 2130968621;
+			
+			// aapt resource value: 0x7f04002e
+			public const int space25 = 2130968622;
+			
+			// aapt resource value: 0x7f04002f
+			public const int space26 = 2130968623;
+			
+			// aapt resource value: 0x7f040030
+			public const int space27 = 2130968624;
+			
+			// aapt resource value: 0x7f040031
+			public const int space28 = 2130968625;
+			
+			// aapt resource value: 0x7f040032
+			public const int space29 = 2130968626;
+			
+			// aapt resource value: 0x7f040018
+			public const int space3 = 2130968600;
+			
+			// aapt resource value: 0x7f040033
+			public const int space30 = 2130968627;
+			
+			// aapt resource value: 0x7f040034
+			public const int space31 = 2130968628;
+			
+			// aapt resource value: 0x7f040035
+			public const int space32 = 2130968629;
+			
+			// aapt resource value: 0x7f040036
+			public const int space33 = 2130968630;
+			
+			// aapt resource value: 0x7f040037
+			public const int space34 = 2130968631;
+			
+			// aapt resource value: 0x7f040038
+			public const int space35 = 2130968632;
+			
+			// aapt resource value: 0x7f040039
+			public const int space36 = 2130968633;
+			
+			// aapt resource value: 0x7f04003a
+			public const int space37 = 2130968634;
+			
+			// aapt resource value: 0x7f040019
+			public const int space4 = 2130968601;
+			
+			// aapt resource value: 0x7f04001a
+			public const int space5 = 2130968602;
+			
+			// aapt resource value: 0x7f04001b
+			public const int space6 = 2130968603;
+			
+			// aapt resource value: 0x7f04001c
+			public const int space7 = 2130968604;
+			
+			// aapt resource value: 0x7f04001d
+			public const int space8 = 2130968605;
+			
+			// aapt resource value: 0x7f04001e
+			public const int space9 = 2130968606;
+			
 			// aapt resource value: 0x7f040001
 			public const int spread = 2130968577;
 			
