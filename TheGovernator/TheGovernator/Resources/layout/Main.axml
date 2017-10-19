@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-</LinearLayout>
+<GridLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/gridLayout1">
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView1" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView2" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView3" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView4" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView5" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView6" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView7" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView8" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView9" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView10" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView11" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:id="@+id/imageView12" />
+</GridLayout>
