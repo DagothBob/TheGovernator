@@ -1,2 +1,305 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout />
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="horizontal"
+    p1:layout_width="fill_parent"
+    p1:layout_height="fill_parent"
+    p1:id="@+id/linearLayoutX">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY1"
+        p1:layout_weight="1" />
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY2"
+        p1:layout_weight="1">
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding3"
+            p1:layout_weight="10" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView1"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding1"
+            p1:layout_weight="3" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView2"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding2"
+            p1:layout_weight="10" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY3"
+        p1:layout_weight="1">
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding6"
+            p1:layout_weight="7" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView9"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding5"
+            p1:layout_weight="9" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView10"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding4"
+            p1:layout_weight="7" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY4"
+        p1:layout_weight="1" />
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY5"
+        p1:layout_weight="1" />
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY6"
+        p1:layout_weight="1">
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding7"
+            p1:layout_weight="6" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView17"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding8"
+            p1:layout_weight="11" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView19"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding9"
+            p1:layout_weight="6" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY7"
+        p1:layout_weight="1" />
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY8"
+        p1:layout_weight="1" />
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY9"
+        p1:layout_weight="1">
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding10"
+            p1:layout_weight="6" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView25"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding11"
+            p1:layout_weight="11" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView26"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding12"
+            p1:layout_weight="6" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY10"
+        p1:layout_weight="1" />
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY11"
+        p1:layout_weight="1" />
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY12"
+        p1:layout_weight="1">
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding13"
+            p1:layout_weight="7" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView23"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding14"
+            p1:layout_weight="9" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView24"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding15"
+            p1:layout_weight="7" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY13"
+        p1:layout_weight="1">
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding17"
+            p1:layout_weight="10" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView5"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding16"
+            p1:layout_weight="3" />
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView6"
+            p1:layout_weight="1" />
+        <ImageView
+            p1:src="@android:color/transparent"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/padding18"
+            p1:layout_weight="10" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="0dp"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayoutY14"
+        p1:layout_weight="1" />
+</LinearLayout>
