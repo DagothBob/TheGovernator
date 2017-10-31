@@ -30,7 +30,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView1"
+            p1:id="@+id/button_itsme"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -42,7 +42,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView2"
+            p1:id="@+id/button_chocolates"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -69,7 +69,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView9"
+            p1:id="@+id/button_theforce"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -81,7 +81,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView10"
+            p1:id="@+id/button_dreams"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -124,7 +124,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView17"
+            p1:id="@+id/button_precious"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -136,7 +136,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView19"
+            p1:id="@+id/button_wakeup"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -179,7 +179,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView25"
+            p1:id="@+id/button_hello"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -191,7 +191,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView26"
+            p1:id="@+id/button_neverhungry"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -234,7 +234,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView23"
+            p1:id="@+id/button_littlefriend"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -246,7 +246,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView24"
+            p1:id="@+id/button_deadpeople"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -273,7 +273,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView5"
+            p1:id="@+id/button_likehome"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"
@@ -285,7 +285,7 @@
             p1:src="@android:drawable/ic_menu_gallery"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
-            p1:id="@+id/imageView6"
+            p1:id="@+id/button_gohome"
             p1:layout_weight="1" />
         <ImageView
             p1:src="@android:color/transparent"

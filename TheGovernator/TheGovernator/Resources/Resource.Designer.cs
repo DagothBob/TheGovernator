@@ -182,44 +182,44 @@ namespace TheGovernator
 			// aapt resource value: 0x7f040006
 			public const int basic = 2130968582;
 			
-			// aapt resource value: 0x7f040007
-			public const int chains = 2130968583;
-			
-			// aapt resource value: 0x7f04000d
-			public const int imageView1 = 2130968589;
-			
-			// aapt resource value: 0x7f040015
-			public const int imageView10 = 2130968597;
-			
-			// aapt resource value: 0x7f04001b
-			public const int imageView17 = 2130968603;
-			
-			// aapt resource value: 0x7f04001d
-			public const int imageView19 = 2130968605;
-			
 			// aapt resource value: 0x7f04000f
-			public const int imageView2 = 2130968591;
-			
-			// aapt resource value: 0x7f04002b
-			public const int imageView23 = 2130968619;
+			public const int button_chocolates = 2130968591;
 			
 			// aapt resource value: 0x7f04002d
-			public const int imageView24 = 2130968621;
+			public const int button_deadpeople = 2130968621;
 			
-			// aapt resource value: 0x7f040023
-			public const int imageView25 = 2130968611;
-			
-			// aapt resource value: 0x7f040025
-			public const int imageView26 = 2130968613;
-			
-			// aapt resource value: 0x7f040031
-			public const int imageView5 = 2130968625;
+			// aapt resource value: 0x7f040015
+			public const int button_dreams = 2130968597;
 			
 			// aapt resource value: 0x7f040033
-			public const int imageView6 = 2130968627;
+			public const int button_gohome = 2130968627;
+			
+			// aapt resource value: 0x7f040023
+			public const int button_hello = 2130968611;
+			
+			// aapt resource value: 0x7f04000d
+			public const int button_itsme = 2130968589;
+			
+			// aapt resource value: 0x7f040031
+			public const int button_likehome = 2130968625;
+			
+			// aapt resource value: 0x7f04002b
+			public const int button_littlefriend = 2130968619;
+			
+			// aapt resource value: 0x7f040025
+			public const int button_neverhungry = 2130968613;
+			
+			// aapt resource value: 0x7f04001b
+			public const int button_precious = 2130968603;
 			
 			// aapt resource value: 0x7f040013
-			public const int imageView9 = 2130968595;
+			public const int button_theforce = 2130968595;
+			
+			// aapt resource value: 0x7f04001d
+			public const int button_wakeup = 2130968605;
+			
+			// aapt resource value: 0x7f040007
+			public const int chains = 2130968583;
 			
 			// aapt resource value: 0x7f040009
 			public const int linearLayoutX = 2130968585;
