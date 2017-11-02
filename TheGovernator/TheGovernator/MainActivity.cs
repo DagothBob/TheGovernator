@@ -33,8 +33,8 @@ namespace TheGovernator
             button_precious = (ImageView)FindViewById(Resource.Id.button_precious);
             button_hello = (ImageView)FindViewById(Resource.Id.button_hello);
 
-            // New ImageView for background image
-            background = new ImageView(ApplicationContext);
+            // Attaching background to its view
+            background = (ImageView)FindViewById(Resource.Id.background);
 
             // Setting Button delegates
             button_chocolates.Click += Button_chocolates_Click;

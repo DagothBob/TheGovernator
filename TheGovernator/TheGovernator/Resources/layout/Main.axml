@@ -307,7 +307,6 @@
             android:layout_weight="1" />
     </LinearLayout>
     <ImageView
-        android:src="@android:color/transparent"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/background" />
