@@ -179,6 +179,9 @@ namespace TheGovernator
 			// aapt resource value: 0x7f040005
 			public const int all = 2130968581;
 			
+			// aapt resource value: 0x7f040036
+			public const int background = 2130968630;
+			
 			// aapt resource value: 0x7f040006
 			public const int basic = 2130968582;
 			

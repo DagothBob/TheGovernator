@@ -1,305 +1,314 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
-    p1:orientation="horizontal"
-    p1:layout_width="fill_parent"
-    p1:layout_height="fill_parent"
-    p1:id="@+id/linearLayoutX">
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
     <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY1"
-        p1:layout_weight="1" />
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY2"
-        p1:layout_weight="1">
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding3"
-            p1:layout_weight="10" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_itsme"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding1"
-            p1:layout_weight="3" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_chocolates"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding2"
-            p1:layout_weight="10" />
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayoutX">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY1"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY2"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding3"
+                android:layout_weight="10" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_itsme"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding1"
+                android:layout_weight="3" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_chocolates"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding2"
+                android:layout_weight="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY3"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding6"
+                android:layout_weight="7" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_theforce"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding5"
+                android:layout_weight="9" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_dreams"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding4"
+                android:layout_weight="7" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY4"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY5"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY6"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding7"
+                android:layout_weight="6" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_precious"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding8"
+                android:layout_weight="11" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_wakeup"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding9"
+                android:layout_weight="6" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY7"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY8"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY9"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding10"
+                android:layout_weight="6" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_hello"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding11"
+                android:layout_weight="11" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_neverhungry"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding12"
+                android:layout_weight="6" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY10"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY11"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY12"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding13"
+                android:layout_weight="7" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_littlefriend"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding14"
+                android:layout_weight="9" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_deadpeople"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding15"
+                android:layout_weight="7" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY13"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding17"
+                android:layout_weight="10" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_likehome"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding16"
+                android:layout_weight="3" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_gohome"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding18"
+                android:layout_weight="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY14"
+            android:layout_weight="1" />
     </LinearLayout>
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY3"
-        p1:layout_weight="1">
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding6"
-            p1:layout_weight="7" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_theforce"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding5"
-            p1:layout_weight="9" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_dreams"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding4"
-            p1:layout_weight="7" />
-    </LinearLayout>
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY4"
-        p1:layout_weight="1" />
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY5"
-        p1:layout_weight="1" />
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY6"
-        p1:layout_weight="1">
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding7"
-            p1:layout_weight="6" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_precious"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding8"
-            p1:layout_weight="11" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_wakeup"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding9"
-            p1:layout_weight="6" />
-    </LinearLayout>
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY7"
-        p1:layout_weight="1" />
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY8"
-        p1:layout_weight="1" />
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY9"
-        p1:layout_weight="1">
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding10"
-            p1:layout_weight="6" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_hello"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding11"
-            p1:layout_weight="11" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_neverhungry"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding12"
-            p1:layout_weight="6" />
-    </LinearLayout>
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY10"
-        p1:layout_weight="1" />
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY11"
-        p1:layout_weight="1" />
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY12"
-        p1:layout_weight="1">
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding13"
-            p1:layout_weight="7" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_littlefriend"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding14"
-            p1:layout_weight="9" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_deadpeople"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding15"
-            p1:layout_weight="7" />
-    </LinearLayout>
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY13"
-        p1:layout_weight="1">
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding17"
-            p1:layout_weight="10" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_likehome"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding16"
-            p1:layout_weight="3" />
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/button_gohome"
-            p1:layout_weight="1" />
-        <ImageView
-            p1:src="@android:color/transparent"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/padding18"
-            p1:layout_weight="10" />
-    </LinearLayout>
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="0dp"
-        p1:layout_height="match_parent"
-        p1:id="@+id/linearLayoutY14"
-        p1:layout_weight="1" />
-</LinearLayout>
+    <ImageView
+        android:src="@android:color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/background" />
+</AbsoluteLayout>
