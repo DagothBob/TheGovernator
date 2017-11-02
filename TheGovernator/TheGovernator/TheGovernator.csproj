@@ -85,148 +85,148 @@
     <Folder Include="Resources\mipmap-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Dead People landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\dead_people_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Dead People portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\dead_people_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\ET landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\go_home_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\ET portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\go_home_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Forrest Gump landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\chocolates_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Forrest Gump portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\chocolates_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Gollum landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\precious_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Gollum portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\precious_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Had me at Hello landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\hello_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Had me at Hello portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\hello_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Little Friend landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\little_friend_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Little Friend portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\little_friend_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Maltese Falcon landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\dreams_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Maltese Falcon portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\dreams_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Mario landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\its_me_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Mario portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\its_me_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Never go hungry again landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\never_hungry_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Never go hungry again portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\never_hungry_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Obiwan landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\force_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Obiwan portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\force_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\wake me up inside edit.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\wake_up_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\wake me up inside landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\wake_up_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Wizard of oz landscape.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\like_home_LS.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Backgrounds\Wizard of Oz portrait.jpg" />
+    <AndroidResource Include="Resources\drawable\Backgrounds\like_home_P.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Bird Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\dreams_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Bird Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\dreams_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Bread Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\never_hungry_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Bread Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\never_hungry_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Chocolate Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\chocolates_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Chocolate Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\chocolates_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Gun Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\little_friend_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Gun Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\little_friend_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Hello Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\hello_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Hello Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\hello_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Mushroon Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\its_me_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Mushroon Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\its_me_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Phone Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\go_home_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Phone Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\go_home_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Red Shoes Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\like_home_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Red Shoes Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\like_home_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Ring Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\precious_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Ring Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\precious_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Skull Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\dead_people_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Skull Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\dead_people_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Sleeping Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\wake_up_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Sleeping Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\wake_up_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Yoda Icon Pressed.png" />
+    <AndroidResource Include="Resources\drawable\Icons\force_icon_X.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icons\Yoda Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icons\force_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\OHHHHH.mp3" />
