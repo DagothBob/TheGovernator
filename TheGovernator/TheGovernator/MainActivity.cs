@@ -9,10 +9,17 @@ namespace TheGovernator
     [Activity(Label = "TheGovernator", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        protected const string SAVE_SELECTION = "";
+
+        protected int current_selection = 0;
+
+        // Do not access these by name - use buttons array + the index
         protected ImageView button_littlefriend, button_likehome, button_itsme,
             button_deadpeople, button_dreams, button_neverhungry, button_wakeup,
             button_chocolates, button_gohome, button_theforce, button_precious,
             button_hello, background;
+
+        protected ImageView[] buttons;
 
         protected MediaPlayer playerSE;
 
@@ -22,25 +29,38 @@ namespace TheGovernator
         {
             base.OnCreate(savedInstanceState);
 
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
             // Attaching objects to their views
-            button_chocolates = (ImageView) FindViewById(Resource.Id.button_chocolates);
-            button_littlefriend = (ImageView)FindViewById(Resource.Id.button_littlefriend);
-            button_likehome = (ImageView)FindViewById(Resource.Id.button_likehome);
-            button_itsme = (ImageView)FindViewById(Resource.Id.button_itsme);
-            button_deadpeople = (ImageView)FindViewById(Resource.Id.button_deadpeople);
-            button_dreams = (ImageView)FindViewById(Resource.Id.button_dreams);
-            button_neverhungry = (ImageView)FindViewById(Resource.Id.button_neverhungry);
-            button_wakeup = (ImageView)FindViewById(Resource.Id.button_wakeup);
-            button_gohome = (ImageView)FindViewById(Resource.Id.button_gohome);
-            button_theforce = (ImageView)FindViewById(Resource.Id.button_theforce);
-            button_precious = (ImageView)FindViewById(Resource.Id.button_precious);
-            button_hello = (ImageView)FindViewById(Resource.Id.button_hello);
+            button_chocolates = FindViewById<ImageView>(Resource.Id.button_chocolates);
+            button_littlefriend = FindViewById<ImageView>(Resource.Id.button_littlefriend);
+            button_likehome = FindViewById<ImageView>(Resource.Id.button_likehome);
+            button_itsme = FindViewById<ImageView>(Resource.Id.button_itsme);
+            button_deadpeople = FindViewById<ImageView>(Resource.Id.button_deadpeople);
+            button_dreams = FindViewById<ImageView>(Resource.Id.button_dreams);
+            button_neverhungry = FindViewById<ImageView>(Resource.Id.button_neverhungry);
+            button_wakeup = FindViewById<ImageView>(Resource.Id.button_wakeup);
+            button_gohome = FindViewById<ImageView>(Resource.Id.button_gohome);
+            button_theforce = FindViewById<ImageView>(Resource.Id.button_theforce);
+            button_precious = FindViewById<ImageView>(Resource.Id.button_precious);
+            button_hello = FindViewById<ImageView>(Resource.Id.button_hello);
+
+            buttons = new ImageView[] { button_littlefriend, button_likehome, button_itsme,
+            button_deadpeople, button_dreams, button_neverhungry, button_wakeup,
+            button_chocolates, button_gohome, button_theforce, button_precious,
+            button_hello };
 
             // Attaching background to its view
-            background = (ImageView)FindViewById(Resource.Id.background);
+            background = FindViewById<ImageView>(Resource.Id.background);
+
+            // Restore saved state
+            if (savedInstanceState != null)
+            {
+                current_selection = savedInstanceState.GetInt(SAVE_SELECTION);
+                ChangeSelection(buttons[current_selection], false);
+            }
+
+            // Initial background (will not play sound)
 
             // Setting Button delegates
             button_chocolates.Click += Button_chocolates_Click;
@@ -55,6 +75,12 @@ namespace TheGovernator
             button_gohome.Click += Button_gohome_Click;
             button_theforce.Click += Button_theforce_Click;
             button_hello.Click += Button_hello_Click;
+        }
+
+        protected override void OnSaveInstanceState(Bundle outState)
+        {
+            base.OnSaveInstanceState(outState);
+            outState.PutInt(SAVE_SELECTION, current_selection);
         }
 
         private void Button_hello_Click(object sender, System.EventArgs e)
@@ -132,6 +158,80 @@ namespace TheGovernator
                 playerSE.Prepare();
                 playerSE.Start();
                 Console.WriteLine("DEBUG: SE_TEST COMPLETE");
+            }
+        }
+
+        /*  Transition the background  */
+        public void ChangeBackground(int backgroundchange)
+        {
+            background.SetImageResource(Resource.Drawable.chocolates_P);
+        }
+
+        /*  Actions to perform when a button is selected  */
+        public void ChangeSelection(ImageView selection, bool instantplay)
+        {
+            if (instantplay)
+            {
+                // button_littlefriend
+                if (selection == buttons[0])
+                {
+
+                }
+                // button_likehome
+                else if (selection == buttons[1])
+                {
+
+                }
+                // button_itsme
+                else if (selection == buttons[2])
+                {
+
+                }
+                // button_deadpeople
+                else if (selection == buttons[3])
+                {
+
+                }
+                // button_dreams
+                else if (selection == buttons[4])
+                {
+
+                }
+                // button_neverhungry
+                else if (selection == buttons[5])
+                {
+
+                }
+                // button_wakeup
+                else if (selection == buttons[6])
+                {
+
+                }
+                // button_chocolates
+                else if (selection == buttons[7])
+                {
+
+                }
+                // button_gohome
+                else if (selection == buttons[8])
+                {
+
+                }
+                // button_theforce
+                else if (selection == buttons[9])
+                {
+
+                }
+                // button_precious
+                else if (selection == buttons[10])
+                {
+
+                }
+                // button_hello
+                else if (selection == buttons[11])
+                {
+
+                }
             }
         }
     }
