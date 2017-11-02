@@ -1,6 +1,8 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Media;
+using System;
 
 namespace TheGovernator
 {
@@ -11,7 +13,11 @@ namespace TheGovernator
             button_deadpeople, button_dreams, button_neverhungry, button_wakeup,
             button_chocolates, button_gohome, button_theforce, button_precious,
             button_hello, background;
-        
+
+        protected MediaPlayer playerSE;
+
+        protected const String SE_TEST = "Resources/raw/OHHHHH.mp3";
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -53,7 +59,7 @@ namespace TheGovernator
 
         private void Button_hello_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_theforce_Click(object sender, System.EventArgs e)
@@ -109,6 +115,24 @@ namespace TheGovernator
         private void Button_chocolates_Click(object sender, System.EventArgs e)
         {
             throw new System.NotImplementedException();
+        }
+
+        //Plays specified audio file, initializing playerSE as a MediaPlayer object
+        //if it hasn't been already
+        public void StartPlayer(String filePath)
+        {
+            if (playerSE == null)
+            {
+                playerSE = new MediaPlayer();
+            }
+            else
+            {
+                playerSE.Reset();
+                playerSE.SetDataSource(filePath);
+                playerSE.Prepare();
+                playerSE.Start();
+                Console.WriteLine("DEBUG: SE_TEST COMPLETE");
+            }
         }
     }
 }
