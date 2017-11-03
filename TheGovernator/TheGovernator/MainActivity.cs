@@ -23,8 +23,9 @@ namespace TheGovernator
         protected ImageView[] buttons;
 
         protected MediaPlayer playerSE;
+        protected int[] soundEffects;
 
-        protected const String SE_TEST = "Resources/raw/SE_test.mp3";
+        protected const int SE_TEST = Resource.Raw.SE_test;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -53,6 +54,12 @@ namespace TheGovernator
             button_chocolates, button_gohome, button_theforce, button_precious,
             button_hello };
 
+            soundEffects = new int[] { Resource.Raw.SE_test, Resource.Raw.SE_test,
+                Resource.Raw.SE_test, Resource.Raw.SE_test, Resource.Raw.SE_test,
+                Resource.Raw.SE_test, Resource.Raw.SE_test, Resource.Raw.SE_test,
+                Resource.Raw.SE_test, Resource.Raw.SE_test, Resource.Raw.SE_test,
+                Resource.Raw.SE_test, Resource.Raw.SE_test };
+
             // Attaching background to its view
             background = FindViewById<ImageView>(Resource.Id.background);
 
@@ -79,7 +86,6 @@ namespace TheGovernator
             button_theforce.Click += Button_theforce_Click;
             button_hello.Click += Button_hello_Click;
 
-            playerSE = new MediaPlayer();
         }
 
         protected override void OnSaveInstanceState(Bundle outState)
@@ -90,82 +96,72 @@ namespace TheGovernator
 
         private void Button_hello_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_theforce_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_gohome_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_wakeup_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_precious_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_neverhungry_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_dreams_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_itsme_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_deadpeople_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_littlefriend_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_likehome_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
         private void Button_chocolates_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(SE_TEST);
+            StartPlayer(soundEffects[12]);
         }
 
-        //Plays specified audio file, initializing playerSE as a MediaPlayer object
-        //if it hasn't been already
-        public void StartPlayer(String filePath)
+        // TODO: Create all sound files, ensure state is uninterrupted, etc.
+        public void StartPlayer(int fileID)
         {
-            Console.WriteLine("DEBUG: STARTPLAYER CALLED");
-            AssetFileDescriptor afd = Assets.OpenFd(filePath);
-            if (playerSE == null)
-            {
-                playerSE = new MediaPlayer();
-            }
-            else
-            {
-                playerSE.Reset();
-                playerSE.SetDataSource(afd.FileDescriptor);
-                playerSE.Prepare();
-                playerSE.Start();
-                Console.WriteLine("DEBUG: PLAYERSE.START()");
-            }
+            playerSE = MediaPlayer.Create(this, fileID);
+            if(playerSE.IsPlaying)
+                playerSE.Stop();
+
+            playerSE.Start();
         }
 
         /*  Transition the background  */
