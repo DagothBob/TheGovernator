@@ -15,12 +15,15 @@ namespace TheGovernator
         protected int current_selection = 0;
 
         // Do not access these by name - use buttons array + the index
+        // They are added to the array in this order (littlefriend is 0, likehome 1, etc.)
         protected ImageView button_littlefriend, button_likehome, button_itsme,
             button_deadpeople, button_dreams, button_neverhungry, button_wakeup,
             button_chocolates, button_gohome, button_theforce, button_precious,
             button_hello, background;
 
         protected ImageView[] buttons;
+
+        protected int[,] backgrounds;
 
         protected MediaPlayer playerSE;
         protected int[] soundEffects;
@@ -49,10 +52,22 @@ namespace TheGovernator
             button_precious = FindViewById<ImageView>(Resource.Id.button_precious);
             button_hello = FindViewById<ImageView>(Resource.Id.button_hello);
 
+            // Access buttons through this array after this line!
             buttons = new ImageView[] { button_littlefriend, button_likehome, button_itsme,
             button_deadpeople, button_dreams, button_neverhungry, button_wakeup,
             button_chocolates, button_gohome, button_theforce, button_precious,
             button_hello };
+
+            // Access backgrounds through this 2D array after this line!
+            // First index is standard ID for the quote
+            // Second index is 0 for landscape, 1 for portrait
+            backgrounds = new int[,] { { Resource.Drawable.little_friend_LS, Resource.Drawable.like_home_LS, Resource.Drawable.its_me_LS,
+            Resource.Drawable.dead_people_LS, Resource.Drawable.dreams_LS, Resource.Drawable.never_hungry_LS, Resource.Drawable.wake_up_LS,
+            Resource.Drawable.chocolates_LS, Resource.Drawable.go_home_LS, Resource.Drawable.force_LS, Resource.Drawable.precious_LS,
+            Resource.Drawable.hello_LS }, { Resource.Drawable.little_friend_P, Resource.Drawable.like_home_P, Resource.Drawable.its_me_P,
+            Resource.Drawable.dead_people_P, Resource.Drawable.dreams_P, Resource.Drawable.never_hungry_P, Resource.Drawable.wake_up_P,
+            Resource.Drawable.chocolates_P, Resource.Drawable.go_home_P, Resource.Drawable.force_P, Resource.Drawable.precious_P,
+            Resource.Drawable.hello_P } };
 
             soundEffects = new int[] { Resource.Raw.SE_test, Resource.Raw.SE_test,
                 Resource.Raw.SE_test, Resource.Raw.SE_test, Resource.Raw.SE_test,
@@ -68,6 +83,10 @@ namespace TheGovernator
             {
                 current_selection = savedInstanceState.GetInt(SAVE_SELECTION);
                 ChangeSelection(buttons[current_selection], false);
+            }
+            else
+            {
+                ChangeSelection(buttons[0], false);
             }
 
             // Initial background (will not play sound)
@@ -164,77 +183,90 @@ namespace TheGovernator
             playerSE.Start();
         }
 
-        /*  Transition the background  */
-        public void ChangeBackground(int backgroundchange)
+        /*  Transition the background
+         *  backgroundvalue is 0 - 11 for backgrounds[,]
+         *  orientation is 0 for landscape, 1 for portrait in backgrounds[,]  */
+        public void ChangeBackground(int backgroundvalue, int orientation)
         {
+            // TODO: background.SetImageResource(backgrounds[backgroundvalue, orientation]);
             background.SetImageResource(Resource.Drawable.chocolates_P);
         }
 
-        /*  Actions to perform when a button is selected  */
+        /*  Actions to perform when a button is selected
+         *  bool instantplay is if audio playback should begin when selected  */
         public void ChangeSelection(ImageView selection, bool instantplay)
-        {
+        { // TODO: Change all SE_TEST to final audio files
+            int choiceint = 0;
             if (instantplay)
             {
                 // button_littlefriend
                 if (selection == buttons[0])
                 {
-
+                    choiceint = 0;
                 }
                 // button_likehome
                 else if (selection == buttons[1])
                 {
-
+                    choiceint = 1;
                 }
                 // button_itsme
                 else if (selection == buttons[2])
                 {
-
+                    choiceint = 2;
                 }
                 // button_deadpeople
                 else if (selection == buttons[3])
                 {
-
+                    choiceint = 3;
                 }
                 // button_dreams
                 else if (selection == buttons[4])
                 {
-
+                    choiceint = 4;
                 }
                 // button_neverhungry
                 else if (selection == buttons[5])
                 {
-
+                    choiceint = 5;
                 }
                 // button_wakeup
                 else if (selection == buttons[6])
                 {
-
+                    choiceint = 6;
                 }
                 // button_chocolates
                 else if (selection == buttons[7])
                 {
-
+                    choiceint = 7;
                 }
                 // button_gohome
                 else if (selection == buttons[8])
                 {
-
+                    choiceint = 8;
                 }
                 // button_theforce
                 else if (selection == buttons[9])
                 {
-
+                    choiceint = 9;
                 }
                 // button_precious
                 else if (selection == buttons[10])
                 {
-
+                    choiceint = 10;
                 }
                 // button_hello
                 else if (selection == buttons[11])
                 {
-
+                    choiceint = 11;
                 }
+            }
+            if (true)
+            {
+                ChangeBackground(choiceint, 0);
+            }
+            else
+            {
+                ChangeBackground(choiceint, 1);
             }
         }
     }
