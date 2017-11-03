@@ -371,7 +371,7 @@ namespace TheGovernator
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int OHHHHH = 2130903040;
+			public const int SE_test = 2130903040;
 			
 			static Raw()
 			{

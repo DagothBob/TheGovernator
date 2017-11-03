@@ -3,6 +3,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Media;
 using System;
+using Android.Content.Res;
 
 namespace TheGovernator
 {
@@ -16,7 +17,7 @@ namespace TheGovernator
 
         protected MediaPlayer playerSE;
 
-        protected const String SE_TEST = "Resources/raw/OHHHHH.mp3";
+        protected const String SE_TEST = "Resources/raw/SE_test.mp3";
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -24,6 +25,8 @@ namespace TheGovernator
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+
+            Console.WriteLine("DEBUG: CONSOLE.WRITELINE TEST");
 
             // Attaching objects to their views
             button_chocolates = (ImageView) FindViewById(Resource.Id.button_chocolates);
@@ -55,6 +58,8 @@ namespace TheGovernator
             button_gohome.Click += Button_gohome_Click;
             button_theforce.Click += Button_theforce_Click;
             button_hello.Click += Button_hello_Click;
+
+            playerSE = new MediaPlayer();
         }
 
         private void Button_hello_Click(object sender, System.EventArgs e)
@@ -64,63 +69,65 @@ namespace TheGovernator
 
         private void Button_theforce_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_gohome_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_wakeup_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_precious_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_neverhungry_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_dreams_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_itsme_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_deadpeople_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_littlefriend_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_likehome_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         private void Button_chocolates_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            StartPlayer(SE_TEST);
         }
 
         //Plays specified audio file, initializing playerSE as a MediaPlayer object
         //if it hasn't been already
         public void StartPlayer(String filePath)
         {
+            Console.WriteLine("DEBUG: STARTPLAYER CALLED");
+            AssetFileDescriptor afd = Assets.OpenFd(filePath);
             if (playerSE == null)
             {
                 playerSE = new MediaPlayer();
@@ -128,10 +135,10 @@ namespace TheGovernator
             else
             {
                 playerSE.Reset();
-                playerSE.SetDataSource(filePath);
+                playerSE.SetDataSource(afd.FileDescriptor);
                 playerSE.Prepare();
                 playerSE.Start();
-                Console.WriteLine("DEBUG: SE_TEST COMPLETE");
+                Console.WriteLine("DEBUG: PLAYERSE.START()");
             }
         }
     }
