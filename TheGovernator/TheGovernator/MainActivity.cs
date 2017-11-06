@@ -4,6 +4,8 @@ using Android.OS;
 using Android.Media;
 using System;
 using Android.Content.Res;
+using Plugin.DeviceOrientation;
+using Xamarin.Forms;
 
 namespace TheGovernator
 {
@@ -26,6 +28,7 @@ namespace TheGovernator
         protected int[,] backgrounds;
 
         protected MediaPlayer playerSE;
+
         protected int[] soundEffects;
 
         protected const int SE_TEST = Resource.Raw.SE_test;
@@ -88,8 +91,6 @@ namespace TheGovernator
             {
                 ChangeSelection(buttons[0], false);
             }
-
-            // Initial background (will not play sound)
 
             // Setting Button delegates
             button_chocolates.Click += Button_chocolates_Click;
@@ -189,7 +190,7 @@ namespace TheGovernator
         public void ChangeBackground(int backgroundvalue, int orientation)
         {
             // TODO: background.SetImageResource(backgrounds[backgroundvalue, orientation]);
-            background.SetImageResource(Resource.Drawable.chocolates_P);
+            background.SetImageResource(backgrounds[backgroundvalue, orientation]);
         }
 
         /*  Actions to perform when a button is selected
@@ -260,7 +261,7 @@ namespace TheGovernator
                     choiceint = 11;
                 }
             }
-            if (true)
+            if (WindowManager.DefaultDisplay.Orientation == 90 || WindowManager.DefaultDisplay.Orientation == 270)
             {
                 ChangeBackground(choiceint, 0);
             }
