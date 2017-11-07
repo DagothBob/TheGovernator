@@ -3,6 +3,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Media;
 using System;
+using System.Collections.Generic;
 using Android.Content.Res;
 using Plugin.DeviceOrientation;
 using Xamarin.Forms;
@@ -29,7 +30,7 @@ namespace TheGovernator
 
         protected MediaPlayer playerSE;
 
-        protected int[] soundEffects;
+        protected Dictionary<int, int> soundEffects;
 
         protected const int SE_TEST = Resource.Raw.SE_test;
 
@@ -72,11 +73,20 @@ namespace TheGovernator
             Resource.Drawable.chocolates_P, Resource.Drawable.go_home_P, Resource.Drawable.force_P, Resource.Drawable.precious_P,
             Resource.Drawable.hello_P } };
 
-            soundEffects = new int[] { Resource.Raw.SE_test, Resource.Raw.SE_test,
-                Resource.Raw.SE_test, Resource.Raw.SE_test, Resource.Raw.SE_test,
-                Resource.Raw.SE_test, Resource.Raw.SE_test, Resource.Raw.SE_test,
-                Resource.Raw.SE_test, Resource.Raw.SE_test, Resource.Raw.SE_test,
-                Resource.Raw.SE_test, Resource.Raw.SE_test };
+            // Access sounds through this Dictionary after this line!
+            soundEffects = new Dictionary<int, int>(); // TODO: Replace placeholders
+            soundEffects.Add(0, Resource.Raw.SE_test); // little_friend
+            soundEffects.Add(1, Resource.Raw.SE_test); // like_home
+            soundEffects.Add(2, Resource.Raw.SE_test); // its_me
+            soundEffects.Add(3, Resource.Raw.SE_test); // deadpeople
+            soundEffects.Add(4, Resource.Raw.SE_test); // dreams
+            soundEffects.Add(5, Resource.Raw.SE_test); // neverhungry
+            soundEffects.Add(6, Resource.Raw.SE_test); // wakeup
+            soundEffects.Add(7, Resource.Raw.SE_test); // chocolates
+            soundEffects.Add(8, Resource.Raw.SE_test); // gohome
+            soundEffects.Add(9, Resource.Raw.SE_test); // theforce
+            soundEffects.Add(10, Resource.Raw.SE_test);// precious
+            soundEffects.Add(11, Resource.Raw.SE_test);// hello
 
             // Attaching background to its view
             background = FindViewById<ImageView>(Resource.Id.background);
@@ -116,65 +126,101 @@ namespace TheGovernator
 
         private void Button_hello_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[11], true);
+            int inint;
+            soundEffects.TryGetValue(11, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_theforce_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[9], true);
+            int inint;
+            soundEffects.TryGetValue(9, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_gohome_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[8], true);
+            int inint;
+            soundEffects.TryGetValue(8, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_wakeup_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[6], true);
+            int inint;
+            soundEffects.TryGetValue(6, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_precious_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[10], true);
+            int inint;
+            soundEffects.TryGetValue(10, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_neverhungry_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[5], true);
+            int inint;
+            soundEffects.TryGetValue(5, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_dreams_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[4], true);
+            int inint;
+            soundEffects.TryGetValue(4, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_itsme_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[2], true);
+            int inint;
+            soundEffects.TryGetValue(2, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_deadpeople_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[3], true);
+            int inint;
+            soundEffects.TryGetValue(3, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_littlefriend_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[0], true);
+            int inint;
+            soundEffects.TryGetValue(0, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_likehome_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[1], true);
+            int inint;
+            soundEffects.TryGetValue(1, out inint);
+            StartPlayer(inint);
         }
 
         private void Button_chocolates_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            ChangeSelection(buttons[7], true);
+            int inint;
+            soundEffects.TryGetValue(7, out inint);
+            StartPlayer(inint);
         }
 
-        // TODO: Create all sound files, ensure state is uninterrupted, etc.
+        // TODO: Create all sound files, ensure state is uninterrupted, asynctask
         public void StartPlayer(int fileID)
         {
             playerSE = MediaPlayer.Create(this, fileID);

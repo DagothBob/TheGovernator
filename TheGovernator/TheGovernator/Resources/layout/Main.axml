@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="fill_parent"
-    android:layout_width="fill_parent">
+    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:gridSpec="1|8|#0093eeff|K:#ee8700ff:16,l:72,l:16,r|S:#83ee00ff:16,0,l:16,56,l:16,0,r">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/background"
+        android:src="@drawable/little_friend_p"
+        android:scaleType="centerCrop" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
@@ -22,7 +30,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/linearLayoutY2"
-            android:layout_weight="1">
+            android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
@@ -30,23 +38,23 @@
                 android:id="@+id/padding3"
                 android:layout_weight="10" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/its_me_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_itsme"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/padding1"
-                android:layout_weight="3" />
+                android:layout_weight="2" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/chocolates_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_chocolates"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
@@ -61,7 +69,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/linearLayoutY3"
-            android:layout_weight="1">
+            android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
@@ -69,11 +77,11 @@
                 android:id="@+id/padding6"
                 android:layout_weight="7" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/force_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_theforce"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
@@ -81,11 +89,11 @@
                 android:id="@+id/padding5"
                 android:layout_weight="9" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/dreams_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_dreams"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
@@ -116,37 +124,37 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/linearLayoutY6"
-            android:layout_weight="1">
+            android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/padding7"
-                android:layout_weight="6" />
+                android:layout_weight="5" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/precious_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_precious"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/padding8"
-                android:layout_weight="11" />
+                android:layout_weight="12" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/wake_up_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_wakeup"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/padding9"
-                android:layout_weight="6" />
+                android:layout_weight="5" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -155,7 +163,34 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/linearLayoutY7"
-            android:layout_weight="1" />
+            android:layout_weight="0" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayoutY7.5"
+            android:layout_weight="2">
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding17"
+                android:layout_weight="7" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button_play"
+                android:layout_weight="1" />
+            <ImageView
+                android:src="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/padding18"
+                android:layout_weight="7" />
+        </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -163,7 +198,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/linearLayoutY8"
-            android:layout_weight="1" />
+            android:layout_weight="0" />
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -171,37 +206,37 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/linearLayoutY9"
-            android:layout_weight="1">
+            android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/padding10"
-                android:layout_weight="6" />
+                android:layout_weight="5" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/hello_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_hello"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/padding11"
-                android:layout_weight="11" />
+                android:layout_weight="12" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/never_hungry_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_neverhungry"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/padding12"
-                android:layout_weight="6" />
+                android:layout_weight="5" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -226,7 +261,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/linearLayoutY12"
-            android:layout_weight="1">
+            android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
@@ -234,11 +269,11 @@
                 android:id="@+id/padding13"
                 android:layout_weight="7" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/little_friend_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_littlefriend"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
@@ -246,11 +281,11 @@
                 android:id="@+id/padding14"
                 android:layout_weight="9" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/dead_people_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_deadpeople"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
@@ -265,7 +300,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/linearLayoutY13"
-            android:layout_weight="1">
+            android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
@@ -273,23 +308,23 @@
                 android:id="@+id/padding17"
                 android:layout_weight="10" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/like_home_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_likehome"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/padding16"
-                android:layout_weight="3" />
+                android:layout_weight="2" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/go_home_icon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:id="@+id/button_gohome"
-                android:layout_weight="1" />
+                android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
                 android:layout_width="match_parent"
@@ -306,8 +341,4 @@
             android:id="@+id/linearLayoutY14"
             android:layout_weight="1" />
     </LinearLayout>
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/background" />
 </AbsoluteLayout>
