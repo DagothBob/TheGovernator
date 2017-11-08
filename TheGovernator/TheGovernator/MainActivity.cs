@@ -145,73 +145,61 @@ namespace TheGovernator
         private void Button_hello_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[11], true);
-            StartPlayer(soundEffects[11]);
         }
 
         private void Button_theforce_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[9], true);
-            StartPlayer(soundEffects[9]);
         }
 
         private void Button_gohome_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[8], true);
-            StartPlayer(soundEffects[8]);
         }
 
         private void Button_wakeup_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[6], true);
-            StartPlayer(soundEffects[6]);
         }
 
         private void Button_precious_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[10], true);
-            StartPlayer(soundEffects[10]);
         }
 
         private void Button_neverhungry_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[5], true);
-            StartPlayer(soundEffects[5]);
         }
 
         private void Button_dreams_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[4], true);
-            StartPlayer(soundEffects[4]);
         }
 
         private void Button_itsme_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[2], true);
-            StartPlayer(soundEffects[2]);
         }
 
         private void Button_deadpeople_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[3], true);
-            StartPlayer(soundEffects[3]);
         }
 
         private void Button_littlefriend_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[0], true);
-            StartPlayer(soundEffects[0]);
         }
 
         private void Button_likehome_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[1], true);
-            StartPlayer(soundEffects[1]);
         }
 
         private void Button_chocolates_Click(object sender, System.EventArgs e)
         {
             ChangeSelection(buttons[7], true);
-            StartPlayer(soundEffects[7]);
         }
 
         public void StartPlayer(int fileID)
@@ -235,77 +223,88 @@ namespace TheGovernator
          *  bool instantplay is if audio playback should begin when selected  */
         public void ChangeSelection(ImageView selection, bool instantplay)
         {
-            int choiceint = 0;
             if (instantplay)
             {
                 // button_littlefriend
                 if (selection == buttons[0])
                 {
-                    choiceint = 0;
+                    current_selection = 0;
+                    StartPlayer(soundEffects[0]);
                 }
                 // button_likehome
                 else if (selection == buttons[1])
                 {
-                    choiceint = 1;
+                    current_selection = 1;
+                    StartPlayer(soundEffects[1]);
                 }
                 // button_itsme
                 else if (selection == buttons[2])
                 {
-                    choiceint = 2;
+                    current_selection = 2;
+                    StartPlayer(soundEffects[2]);
                 }
                 // button_deadpeople
                 else if (selection == buttons[3])
                 {
-                    choiceint = 3;
+                    current_selection = 3;
+                    StartPlayer(soundEffects[3]);
                 }
                 // button_dreams
                 else if (selection == buttons[4])
                 {
-                    choiceint = 4;
+                    current_selection = 4;
+                    StartPlayer(soundEffects[4]);
                 }
                 // button_neverhungry
                 else if (selection == buttons[5])
                 {
-                    choiceint = 5;
+                    current_selection = 5;
+                    StartPlayer(soundEffects[5]);
                 }
                 // button_wakeup
                 else if (selection == buttons[6])
                 {
-                    choiceint = 6;
+                    current_selection = 6;
+                    StartPlayer(soundEffects[6]);
                 }
                 // button_chocolates
                 else if (selection == buttons[7])
                 {
-                    choiceint = 7;
+                    current_selection = 7;
+                    StartPlayer(soundEffects[7]);
                 }
                 // button_gohome
                 else if (selection == buttons[8])
                 {
-                    choiceint = 8;
+                    current_selection = 8;
+                    StartPlayer(soundEffects[8]);
                 }
                 // button_theforce
                 else if (selection == buttons[9])
                 {
-                    choiceint = 9;
+                    current_selection = 9;
+                    StartPlayer(soundEffects[9]);
                 }
                 // button_precious
                 else if (selection == buttons[10])
                 {
-                    choiceint = 10;
+                    current_selection = 10;
+                    StartPlayer(soundEffects[10]);
                 }
                 // button_hello
                 else if (selection == buttons[11])
                 {
-                    choiceint = 11;
+                    current_selection = 11;
+                    StartPlayer(soundEffects[11]);
                 }
             } // TODO: Fade background
             if (WindowManager.DefaultDisplay.Orientation == 90 || WindowManager.DefaultDisplay.Orientation == 270)
             {
-                ChangeBackground(choiceint, 0);
+                ChangeBackground(current_selection, 0);
             }
             else
             {
-                ChangeBackground(choiceint, 1);
+                ChangeBackground(current_selection, 1);
             }
         }
     }
