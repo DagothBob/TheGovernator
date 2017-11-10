@@ -41,7 +41,7 @@ namespace TheGovernator
 
             SetContentView(Resource.Layout.Main);
 
-            Console.WriteLine("DEBUG: CONSOLE.WRITELINE TEST");
+            ActionBar.Hide();
 
             // Attaching objects to their views
             button_chocolates = FindViewById<ImageView>(Resource.Id.button_chocolates);
@@ -298,7 +298,7 @@ namespace TheGovernator
                     StartPlayer(soundEffects[11]);
                 }
             } // TODO: Fade background
-            if (WindowManager.DefaultDisplay.Orientation == 90 || WindowManager.DefaultDisplay.Orientation == 270)
+            if (WindowManager.DefaultDisplay.Orientation == 1 || WindowManager.DefaultDisplay.Orientation == 3)
             {
                 ChangeBackground(current_selection, 0);
             }
