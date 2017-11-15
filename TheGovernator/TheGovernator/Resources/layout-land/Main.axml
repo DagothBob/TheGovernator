@@ -10,333 +10,333 @@
         android:id="@+id/background"
         android:scaleType="centerCrop" />
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/linearLayoutX">
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY1"
             android:layout_weight="1" />
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY2"
             android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding3"
-                android:layout_weight="10" />
+                android:layout_weight="12" />
             <ImageView
                 android:src="@drawable/its_me_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_itsme"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding1"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@drawable/chocolates_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_chocolates"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding2"
-                android:layout_weight="10" />
+                android:layout_weight="12" />
         </LinearLayout>
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY3"
             android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding6"
-                android:layout_weight="7" />
+                android:layout_weight="8" />
             <ImageView
                 android:src="@drawable/force_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_theforce"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding5"
-                android:layout_weight="9" />
+                android:layout_weight="8" />
             <ImageView
                 android:src="@drawable/dreams_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_dreams"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding4"
-                android:layout_weight="7" />
+                android:layout_weight="8" />
         </LinearLayout>
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY4"
             android:layout_weight="1" />
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY5"
             android:layout_weight="1" />
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY6"
             android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding7"
-                android:layout_weight="5" />
+                android:layout_weight="6" />
             <ImageView
                 android:src="@drawable/precious_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_precious"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding8"
-                android:layout_weight="12" />
+                android:layout_weight="11" />
             <ImageView
                 android:src="@drawable/wake_up_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_wakeup"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding9"
-                android:layout_weight="5" />
+                android:layout_weight="6" />
         </LinearLayout>
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY7"
             android:layout_weight="0" />
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY7.5"
             android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding17"
                 android:layout_weight="7" />
             <ImageView
                 android:src="@android:drawable/ic_menu_gallery"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_play"
                 android:layout_weight="1" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding18"
                 android:layout_weight="7" />
         </LinearLayout>
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY8"
             android:layout_weight="0" />
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY9"
             android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding10"
-                android:layout_weight="5" />
+                android:layout_weight="6" />
             <ImageView
                 android:src="@drawable/hello_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_hello"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding11"
-                android:layout_weight="12" />
+                android:layout_weight="11" />
             <ImageView
                 android:src="@drawable/never_hungry_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_neverhungry"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding12"
-                android:layout_weight="5" />
+                android:layout_weight="6" />
         </LinearLayout>
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY10"
             android:layout_weight="1" />
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY11"
             android:layout_weight="1" />
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY12"
             android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding13"
-                android:layout_weight="7" />
+                android:layout_weight="8" />
             <ImageView
                 android:src="@drawable/little_friend_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_littlefriend"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding14"
-                android:layout_weight="9" />
+                android:layout_weight="8" />
             <ImageView
                 android:src="@drawable/dead_people_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_deadpeople"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding15"
-                android:layout_weight="7" />
+                android:layout_weight="8" />
         </LinearLayout>
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY13"
             android:layout_weight="2">
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding17"
-                android:layout_weight="10" />
+                android:layout_weight="12" />
             <ImageView
                 android:src="@drawable/like_home_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_likehome"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding16"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@drawable/go_home_icon"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/button_gohome"
                 android:layout_weight="2" />
             <ImageView
                 android:src="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/padding18"
-                android:layout_weight="10" />
+                android:layout_weight="12" />
         </LinearLayout>
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
             android:id="@+id/linearLayoutY14"
             android:layout_weight="1" />
     </LinearLayout>
