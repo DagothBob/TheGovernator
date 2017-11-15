@@ -297,28 +297,37 @@ namespace TheGovernator
 			public const int never_hungry_P = 2130837543;
 			
 			// aapt resource value: 0x7f020028
-			public const int precious_icon = 2130837544;
+			public const int play_icon = 2130837544;
 			
 			// aapt resource value: 0x7f020029
-			public const int precious_icon_X = 2130837545;
+			public const int play_icon_X = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int precious_LS = 2130837546;
+			public const int precious_icon = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int precious_P = 2130837547;
+			public const int precious_icon_X = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int wake_up_icon = 2130837548;
+			public const int precious_LS = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int wake_up_icon_X = 2130837549;
+			public const int precious_P = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int wake_up_LS = 2130837550;
+			public const int splash_screen = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int wake_up_P = 2130837551;
+			public const int wake_up_icon = 2130837551;
+			
+			// aapt resource value: 0x7f020030
+			public const int wake_up_icon_X = 2130837552;
+			
+			// aapt resource value: 0x7f020031
+			public const int wake_up_LS = 2130837553;
+			
+			// aapt resource value: 0x7f020032
+			public const int wake_up_P = 2130837554;
 			
 			static Drawable()
 			{
@@ -380,6 +389,9 @@ namespace TheGovernator
 			
 			// aapt resource value: 0x7f060007
 			public const int chains = 2131099655;
+			
+			// aapt resource value: 0x7f060037
+			public const int imageView1 = 2131099703;
 			
 			// aapt resource value: 0x7f060009
 			public const int linearLayoutX = 2131099657;
@@ -513,6 +525,9 @@ namespace TheGovernator
 			
 			// aapt resource value: 0x7f030000
 			public const int Main = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int SplashScreenLayout = 2130903041;
 			
 			static Layout()
 			{

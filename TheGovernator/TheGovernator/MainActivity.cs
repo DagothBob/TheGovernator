@@ -7,7 +7,7 @@ using Android.Content.Res;
 
 namespace TheGovernator
 {
-    [Activity(Label = "TheGovernator", MainLauncher = true)]
+    [Activity(Label = "TheGovernator")]
     public class MainActivity : Activity
     {
         protected const string SAVE_SELECTION = "";
@@ -25,9 +25,10 @@ namespace TheGovernator
 
         protected int[,] backgrounds;
 
+        // Each item in soundEffects has a voice line
+        // SE_TEST is for testing purposes only
         protected MediaPlayer playerSE;
         protected int[] soundEffects;
-
         protected const int SE_TEST = Resource.Raw.SE_test;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -69,11 +70,13 @@ namespace TheGovernator
             Resource.Drawable.chocolates_P, Resource.Drawable.go_home_P, Resource.Drawable.force_P, Resource.Drawable.precious_P,
             Resource.Drawable.hello_P } };
 
+            // Access sound effects through this array
+            // TODO: replace SE_test with voice lines
             soundEffects = new int[] { Resource.Raw.SE_test, Resource.Raw.SE_test,
                 Resource.Raw.SE_test, Resource.Raw.SE_test, Resource.Raw.SE_test,
                 Resource.Raw.SE_test, Resource.Raw.SE_test, Resource.Raw.SE_test,
                 Resource.Raw.SE_test, Resource.Raw.SE_test, Resource.Raw.SE_test,
-                Resource.Raw.SE_test, Resource.Raw.SE_test };
+                Resource.Raw.SE_test };
 
             // Attaching background to its view
             background = FindViewById<ImageView>(Resource.Id.background);
@@ -115,62 +118,62 @@ namespace TheGovernator
 
         private void Button_hello_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_theforce_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_gohome_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_wakeup_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_precious_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_neverhungry_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_dreams_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_itsme_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_deadpeople_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_littlefriend_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_likehome_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         private void Button_chocolates_Click(object sender, System.EventArgs e)
         {
-            StartPlayer(soundEffects[12]);
+            StartPlayer(SE_TEST);
         }
 
         // TODO: Create all sound files, ensure state is uninterrupted, etc.
