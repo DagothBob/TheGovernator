@@ -2324,26 +2324,26 @@ namespace TheGovernator
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02013d
-			public const int avd_hide_password_1 = 2130837821;
+			// aapt resource value: 0x7f020140
+			public const int avd_hide_password_1 = 2130837824;
 			
-			// aapt resource value: 0x7f02013e
-			public const int avd_hide_password_2 = 2130837822;
+			// aapt resource value: 0x7f020141
+			public const int avd_hide_password_2 = 2130837825;
 			
-			// aapt resource value: 0x7f02013f
-			public const int avd_hide_password_3 = 2130837823;
+			// aapt resource value: 0x7f020142
+			public const int avd_hide_password_3 = 2130837826;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f020140
-			public const int avd_show_password_1 = 2130837824;
+			// aapt resource value: 0x7f020143
+			public const int avd_show_password_1 = 2130837827;
 			
-			// aapt resource value: 0x7f020141
-			public const int avd_show_password_2 = 2130837825;
+			// aapt resource value: 0x7f020144
+			public const int avd_show_password_2 = 2130837828;
 			
-			// aapt resource value: 0x7f020142
-			public const int avd_show_password_3 = 2130837826;
+			// aapt resource value: 0x7f020145
+			public const int avd_show_password_3 = 2130837829;
 			
 			// aapt resource value: 0x7f020055
 			public const int chocolates_icon = 2130837589;
@@ -3005,11 +3005,11 @@ namespace TheGovernator
 			// aapt resource value: 0x7f020130
 			public const int notification_icon_background = 2130837808;
 			
-			// aapt resource value: 0x7f02013b
-			public const int notification_template_icon_bg = 2130837819;
+			// aapt resource value: 0x7f02013e
+			public const int notification_template_icon_bg = 2130837822;
 			
-			// aapt resource value: 0x7f02013c
-			public const int notification_template_icon_low_bg = 2130837820;
+			// aapt resource value: 0x7f02013f
+			public const int notification_template_icon_low_bg = 2130837823;
 			
 			// aapt resource value: 0x7f020131
 			public const int notification_tile_bg = 2130837809;
@@ -3018,28 +3018,37 @@ namespace TheGovernator
 			public const int notify_panel_notification_icon_bg = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int precious_icon = 2130837811;
+			public const int play_icon = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int precious_icon_X = 2130837812;
+			public const int play_icon_X = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int precious_LS = 2130837813;
+			public const int precious_icon = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int precious_P = 2130837814;
+			public const int precious_icon_X = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int wake_up_icon = 2130837815;
+			public const int precious_LS = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int wake_up_icon_X = 2130837816;
+			public const int precious_P = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int wake_up_LS = 2130837817;
+			public const int splash_screen = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int wake_up_P = 2130837818;
+			public const int wake_up_icon = 2130837818;
+			
+			// aapt resource value: 0x7f02013b
+			public const int wake_up_icon_X = 2130837819;
+			
+			// aapt resource value: 0x7f02013c
+			public const int wake_up_LS = 2130837820;
+			
+			// aapt resource value: 0x7f02013d
+			public const int wake_up_P = 2130837821;
 			
 			static Drawable()
 			{
@@ -3306,6 +3315,9 @@ namespace TheGovernator
 			// aapt resource value: 0x7f09004d
 			public const int image = 2131296333;
 			
+			// aapt resource value: 0x7f0900e9
+			public const int imageView1 = 2131296489;
+			
 			// aapt resource value: 0x7f0900df
 			public const int info = 2131296479;
 			
@@ -3378,8 +3390,8 @@ namespace TheGovernator
 			// aapt resource value: 0x7f09004f
 			public const int list_item = 2131296335;
 			
-			// aapt resource value: 0x7f0900ea
-			public const int masked = 2131296490;
+			// aapt resource value: 0x7f0900eb
+			public const int masked = 2131296491;
 			
 			// aapt resource value: 0x7f0900d8
 			public const int media_actions = 2131296472;
@@ -3744,8 +3756,8 @@ namespace TheGovernator
 			// aapt resource value: 0x7f09000e
 			public const int view_offset_helper = 2131296270;
 			
-			// aapt resource value: 0x7f0900e9
-			public const int visible = 2131296489;
+			// aapt resource value: 0x7f0900ea
+			public const int visible = 2131296490;
 			
 			// aapt resource value: 0x7f0900ca
 			public const int volume_item_container = 2131296458;
@@ -4039,10 +4051,10 @@ namespace TheGovernator
 			public const int select_dialog_singlechoice_material = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int support_simple_spinner_dropdown_item = 2130903106;
+			public const int SplashScreenLayout = 2130903106;
 			
-			// aapt resource value: 0x7f030001
-			public const int SplashScreenLayout = 2130903041;
+			// aapt resource value: 0x7f030043
+			public const int support_simple_spinner_dropdown_item = 2130903107;
 			
 			static Layout()
 			{
