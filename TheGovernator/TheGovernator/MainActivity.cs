@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using Android.Content.Res;
 using Plugin.DeviceOrientation;
 using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace TheGovernator
 {
@@ -23,7 +24,7 @@ namespace TheGovernator
         protected ImageView button_littlefriend, button_likehome, button_itsme,
             button_deadpeople, button_dreams, button_neverhungry, button_wakeup,
             button_chocolates, button_gohome, button_theforce, button_precious,
-            button_hello, background;
+            button_hello, background, backgroundFade;
 
         protected ImageView[] buttons;
 
@@ -110,6 +111,9 @@ namespace TheGovernator
 
             // Attaching background to its view
             background = FindViewById<ImageView>(Resource.Id.background);
+
+            // Attaching backgroundFade to its view
+            backgroundFade = FindViewById<ImageView>(Resource.Id.backgroundFade);
 
             // Restore saved state
             if (savedInstanceState != null)
@@ -216,9 +220,21 @@ namespace TheGovernator
         /*  Transition the background
          *  backgroundvalue is 0 - 11 for backgrounds[,]
          *  orientation is 0 for landscape, 1 for portrait in backgrounds[,]  */
-        public void ChangeBackground(int backgroundvalue, int orientation)
+        public async Task ChangeBackgroundAsync(int backgroundvalue, int orientation)
         {
+            backgroundFade.SetImageResource(backgrounds[orientation, current_selection]);
             background.SetImageResource(backgrounds[orientation, backgroundvalue]);
+            background.ImageAlpha = 0;
+            backgroundFade.ImageAlpha = 255;
+
+            while(background.ImageAlpha < 255)
+            {
+                background.ImageAlpha += 1;
+                backgroundFade.ImageAlpha -= 1;
+                await Task.Delay(2);
+            }
+            background.ImageAlpha = 255;
+            backgroundFade.ImageAlpha = 0;
         }
 
         /*  Actions to perform when a button is selected
@@ -302,11 +318,11 @@ namespace TheGovernator
             } // TODO: Fade background
             if (WindowManager.DefaultDisplay.Orientation == 1 || WindowManager.DefaultDisplay.Orientation == 3)
             {
-                ChangeBackground(current_selection, 0);
+                ChangeBackgroundAsync(current_selection, 0);
             }
             else
             {
-                ChangeBackground(current_selection, 1);
+                ChangeBackgroundAsync(current_selection, 1);
             }
         }
     }
