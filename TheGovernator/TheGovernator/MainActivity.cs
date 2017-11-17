@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Media;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using Android.Content.Res;
 using Plugin.DeviceOrientation;
 using Xamarin.Forms;
@@ -210,7 +211,8 @@ namespace TheGovernator
             if(playerSE.IsPlaying)
                 playerSE.Stop();
 
-            playerSE.Start();
+            Thread audiothread = new Thread(new ThreadStart(playerSE.Start));
+            audiothread.Start();
         }
 
         /*  Transition the background
@@ -225,80 +227,82 @@ namespace TheGovernator
          *  bool instantplay is if audio playback should begin when selected  */
         public void ChangeSelection(ImageView selection, bool instantplay)
         {
+            int playchoice = 0; // This assignment shuts up the compiler, it'll never matter
             if (instantplay)
             {
                 // button_littlefriend
                 if (selection == buttons[0])
                 {
                     current_selection = 0;
-                    StartPlayer(soundEffects[0]);
+                    playchoice = (soundEffects[0]);
                 }
                 // button_likehome
                 else if (selection == buttons[1])
                 {
                     current_selection = 1;
-                    StartPlayer(soundEffects[1]);
+                    playchoice = (soundEffects[1]);
                 }
                 // button_itsme
                 else if (selection == buttons[2])
                 {
                     current_selection = 2;
-                    StartPlayer(soundEffects[2]);
+                    playchoice = (soundEffects[2]);
                 }
                 // button_deadpeople
                 else if (selection == buttons[3])
                 {
                     current_selection = 3;
-                    StartPlayer(soundEffects[3]);
+                    playchoice = (soundEffects[3]);
                 }
                 // button_dreams
                 else if (selection == buttons[4])
                 {
                     current_selection = 4;
-                    StartPlayer(soundEffects[4]);
+                    playchoice = (soundEffects[4]);
                 }
                 // button_neverhungry
                 else if (selection == buttons[5])
                 {
                     current_selection = 5;
-                    StartPlayer(soundEffects[5]);
+                    playchoice = (soundEffects[5]);
                 }
                 // button_wakeup
                 else if (selection == buttons[6])
                 {
                     current_selection = 6;
-                    StartPlayer(soundEffects[6]);
+                    playchoice = (soundEffects[6]);
                 }
                 // button_chocolates
                 else if (selection == buttons[7])
                 {
                     current_selection = 7;
-                    StartPlayer(soundEffects[7]);
+                    playchoice = (soundEffects[7]);
                 }
                 // button_gohome
                 else if (selection == buttons[8])
                 {
                     current_selection = 8;
-                    StartPlayer(soundEffects[8]);
+                    playchoice = (soundEffects[8]);
                 }
                 // button_theforce
                 else if (selection == buttons[9])
                 {
                     current_selection = 9;
-                    StartPlayer(soundEffects[9]);
+                    playchoice = (soundEffects[9]);
                 }
                 // button_precious
                 else if (selection == buttons[10])
                 {
                     current_selection = 10;
-                    StartPlayer(soundEffects[10]);
+                    playchoice = (soundEffects[10]);
                 }
                 // button_hello
                 else if (selection == buttons[11])
                 {
                     current_selection = 11;
-                    StartPlayer(soundEffects[11]);
+                    playchoice = (soundEffects[11]);
                 }
+                StartPlayer(playchoice);
             } // TODO: Fade background
             if (WindowManager.DefaultDisplay.Orientation == 1 || WindowManager.DefaultDisplay.Orientation == 3)
             {
