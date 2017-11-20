@@ -46,6 +46,8 @@ namespace TheGovernator
 
             ActionBar.Hide();
 
+            ThreadPool.SetMaxThreads(1, 1);
+
             // Attaching objects to their views
             button_chocolates = FindViewById<ImageView>(Resource.Id.button_chocolates);
             button_littlefriend = FindViewById<ImageView>(Resource.Id.button_littlefriend);
@@ -208,11 +210,18 @@ namespace TheGovernator
         public void StartPlayer(int fileID)
         {
             playerSE = MediaPlayer.Create(this, fileID);
-            if(playerSE.IsPlaying)
+            if(playerSE.IsPlaying) // TODO: Fix this
                 playerSE.Stop();
 
             Thread audiothread = new Thread(new ThreadStart(playerSE.Start));
-            audiothread.Start();
+            if (audiothread.ThreadState == ThreadState.Running)
+            {
+                audiothread.Abort();
+            }
+            else
+            {
+                audiothread.Start();
+            }
         }
 
         /*  Transition the background
