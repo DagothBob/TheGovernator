@@ -24,6 +24,8 @@ namespace TheGovernator
 
             SetContentView(Resource.Layout.SplashScreenLayout);
 
+            ActionBar.Hide();
+
             //OverridePendingTransition(Resource.Anim.left_in, Resource.Anim.left_out);
 
             // Create your application here
