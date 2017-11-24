@@ -24,7 +24,7 @@ namespace TheGovernator
         protected ImageView button_littlefriend, button_likehome, button_itsme,
             button_deadpeople, button_dreams, button_neverhungry, button_wakeup,
             button_chocolates, button_gohome, button_theforce, button_precious,
-            button_hello, background;
+            button_hello, background, button_play;
 
         protected ImageView[] buttons;
 
@@ -37,6 +37,8 @@ namespace TheGovernator
         protected Dictionary<int, int> soundEffects;
 
         protected const int SE_TEST = Resource.Raw.SE_test;
+
+        protected Thread audiothread;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -61,6 +63,8 @@ namespace TheGovernator
             button_theforce = FindViewById<ImageView>(Resource.Id.button_theforce);
             button_precious = FindViewById<ImageView>(Resource.Id.button_precious);
             button_hello = FindViewById<ImageView>(Resource.Id.button_hello);
+
+            button_play = FindViewById<ImageView>(Resource.Id.button_play);
 
             // Access buttons through this array after this line!
             buttons = new ImageView[] { button_littlefriend, button_likehome, button_itsme,
@@ -97,19 +101,21 @@ namespace TheGovernator
                                          Resource.Drawable.hello_P } };
 
             // Access sounds through this Dictionary after this line!
-            soundEffects = new Dictionary<int, int>(); // TODO: Create sounds, replace placeholders
-            soundEffects.Add(0, Resource.Raw.SE_test); // little_friend
-            soundEffects.Add(1, Resource.Raw.SE_test); // like_home
-            soundEffects.Add(2, Resource.Raw.SE_test); // its_me
-            soundEffects.Add(3, Resource.Raw.SE_test); // deadpeople
-            soundEffects.Add(4, Resource.Raw.SE_test); // dreams
-            soundEffects.Add(5, Resource.Raw.SE_test); // neverhungry
-            soundEffects.Add(6, Resource.Raw.SE_test); // wakeup
-            soundEffects.Add(7, Resource.Raw.SE_test); // chocolates
-            soundEffects.Add(8, Resource.Raw.SE_test); // gohome
-            soundEffects.Add(9, Resource.Raw.SE_test); // theforce
-            soundEffects.Add(10, Resource.Raw.SE_test);// precious
-            soundEffects.Add(11, Resource.Raw.SE_test);// hello
+            soundEffects = new Dictionary<int, int>
+            {
+                { 0, Resource.Raw.SE_test }, // little_friend
+                { 1, Resource.Raw.SE_test }, // like_home
+                { 2, Resource.Raw.SE_test }, // its_me
+                { 3, Resource.Raw.SE_test }, // deadpeople
+                { 4, Resource.Raw.SE_test }, // dreams
+                { 5, Resource.Raw.SE_test }, // neverhungry
+                { 6, Resource.Raw.SE_test }, // wakeup
+                { 7, Resource.Raw.SE_test }, // chocolates
+                { 8, Resource.Raw.SE_test }, // gohome
+                { 9, Resource.Raw.SE_test }, // theforce
+                { 10, Resource.Raw.SE_test },// precious
+                { 11, Resource.Raw.SE_test } // hello
+            }; // TODO: Create sounds, replace placeholders
 
             // Attaching background to its view
             background = FindViewById<ImageView>(Resource.Id.background);
@@ -139,6 +145,13 @@ namespace TheGovernator
             button_theforce.Click += Button_theforce_Click;
             button_hello.Click += Button_hello_Click;
 
+            button_play.Click += Button_play_Click;
+        }
+
+        private void Button_play_Click(object sender, EventArgs e)
+        {
+            audiothread = new Thread(() => StartPlayer(soundEffects[current_selection]));
+            audiothread.Start();
         }
 
         protected override void OnSaveInstanceState(Bundle outState)
@@ -207,21 +220,17 @@ namespace TheGovernator
             ChangeSelection(buttons[7], true);
         }
 
+        // Called in audiothread only
         public void StartPlayer(int fileID)
         {
             playerSE = MediaPlayer.Create(this, fileID);
-            if(playerSE.IsPlaying) // TODO: Fix this
-                playerSE.Stop();
 
-            Thread audiothread = new Thread(new ThreadStart(playerSE.Start));
-            if (audiothread.ThreadState == ThreadState.Running)
+            if (playerSE.IsPlaying)
             {
-                audiothread.Abort();
+                playerSE.Stop();
             }
-            else
-            {
-                audiothread.Start();
-            }
+
+            playerSE.Start();
         }
 
         /*  Transition the background
@@ -311,7 +320,7 @@ namespace TheGovernator
                     current_selection = 11;
                     playchoice = (soundEffects[11]);
                 }
-                StartPlayer(playchoice);
+                audiothread = new Thread(() => StartPlayer(playchoice));
             } // TODO: Fade background
             if (WindowManager.DefaultDisplay.Orientation == 1 || WindowManager.DefaultDisplay.Orientation == 3)
             {
