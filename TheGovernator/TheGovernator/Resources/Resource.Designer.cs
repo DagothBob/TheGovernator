@@ -4073,7 +4073,43 @@ namespace TheGovernator
 		{
 			
 			// aapt resource value: 0x7f070000
-			public const int SE_test = 2131165184;
+			public const int chocolates = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int deadpeople = 2131165185;
+			
+			// aapt resource value: 0x7f070002
+			public const int dreams = 2131165186;
+			
+			// aapt resource value: 0x7f070003
+			public const int gohome = 2131165187;
+			
+			// aapt resource value: 0x7f070004
+			public const int hello = 2131165188;
+			
+			// aapt resource value: 0x7f070005
+			public const int itsme = 2131165189;
+			
+			// aapt resource value: 0x7f070006
+			public const int likehome = 2131165190;
+			
+			// aapt resource value: 0x7f070007
+			public const int littlefriend = 2131165191;
+			
+			// aapt resource value: 0x7f070008
+			public const int neverhungry = 2131165192;
+			
+			// aapt resource value: 0x7f070009
+			public const int precious = 2131165193;
+			
+			// aapt resource value: 0x7f07000a
+			public const int SE_test = 2131165194;
+			
+			// aapt resource value: 0x7f07000b
+			public const int theforce = 2131165195;
+			
+			// aapt resource value: 0x7f07000c
+			public const int wakeup = 2131165196;
 			
 			static Raw()
 			{

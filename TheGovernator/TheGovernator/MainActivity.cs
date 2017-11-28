@@ -5,10 +5,6 @@ using Android.Media;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using Android.Content.Res;
-using Plugin.DeviceOrientation;
-using Xamarin.Forms;
-using System.Threading.Tasks;
 using Android.Views;
 
 namespace TheGovernator
@@ -37,8 +33,6 @@ namespace TheGovernator
         protected MediaPlayer playerSE;
 
         protected Dictionary<int, int> soundEffects;
-
-        protected const int SE_TEST = Resource.Raw.SE_test;
 
         protected Thread audiothread;
 
@@ -105,19 +99,19 @@ namespace TheGovernator
             // Access sounds through this Dictionary after this line!
             soundEffects = new Dictionary<int, int>
             {
-                { 0, Resource.Raw.SE_test }, // little_friend
-                { 1, Resource.Raw.SE_test }, // like_home
-                { 2, Resource.Raw.SE_test }, // its_me
-                { 3, Resource.Raw.SE_test }, // deadpeople
-                { 4, Resource.Raw.SE_test }, // dreams
-                { 5, Resource.Raw.SE_test }, // neverhungry
-                { 6, Resource.Raw.SE_test }, // wakeup
-                { 7, Resource.Raw.SE_test }, // chocolates
-                { 8, Resource.Raw.SE_test }, // gohome
-                { 9, Resource.Raw.SE_test }, // theforce
-                { 10, Resource.Raw.SE_test },// precious
-                { 11, Resource.Raw.SE_test } // hello
-            }; // TODO: Create sounds, replace placeholders
+                { 0, Resource.Raw.littlefriend },
+                { 1, Resource.Raw.likehome },
+                { 2, Resource.Raw.itsme },
+                { 3, Resource.Raw.deadpeople },
+                { 4, Resource.Raw.dreams },
+                { 5, Resource.Raw.neverhungry },
+                { 6, Resource.Raw.wakeup },
+                { 7, Resource.Raw.chocolates },
+                { 8, Resource.Raw.gohome },
+                { 9, Resource.Raw.theforce },
+                { 10, Resource.Raw.precious },
+                { 11, Resource.Raw.hello }
+            };
 
             // Attaching background to its view
             background = FindViewById<ImageView>(Resource.Id.background);
@@ -163,6 +157,16 @@ namespace TheGovernator
             button_theforce.Touch += Button_theforce_Touch;
             button_hello.Touch += Button_hello_Touch;
 
+            button_play.Touch += Button_play_Touch;
+        }
+
+        private void Button_play_Touch(object sender, View.TouchEventArgs e)
+        {
+            if (e.Event.Action == MotionEventActions.Down)
+                button_chocolates.SetImageResource(Resource.Drawable.play_icon_X);
+
+            if (e.Event.Action == MotionEventActions.Up)
+                button_chocolates.SetImageResource(Resource.Drawable.play_icon);
         }
 
         // Visual feedback on button presses
@@ -447,7 +451,7 @@ namespace TheGovernator
                     playchoice = (soundEffects[11]);
                 }
                 audiothread = new Thread(() => StartPlayer(playchoice));
-            } // TODO: Fade background
+            }
             if (WindowManager.DefaultDisplay.Orientation == 1 || WindowManager.DefaultDisplay.Orientation == 3)
             {
                 ChangeBackground(current_selection, 0);
