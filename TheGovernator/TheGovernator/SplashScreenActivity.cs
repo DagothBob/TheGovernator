@@ -11,10 +11,11 @@ using Android.Views;
 using Android.Widget;
 using System.Threading.Tasks;
 using Android.Util;
+using Android.Content.PM;
 
 namespace TheGovernator
 {
-    [Activity(Label = "SplashScreen", MainLauncher = true)]
+    [Activity(Label = "SplashScreen", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
     public class SplashScreenActivity : Activity
     {
         static readonly string TAG = "X:" + typeof(SplashScreenActivity).Name;
