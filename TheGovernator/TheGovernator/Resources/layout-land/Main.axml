@@ -178,7 +178,7 @@
                 android:id="@+id/padding17"
                 android:layout_weight="7" />
             <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/play_icon"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:id="@+id/button_play"

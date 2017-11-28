@@ -15,7 +15,7 @@ using Android.Content.PM;
 
 namespace TheGovernator
 {
-    [Activity(Label = "SplashScreen", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
+    [Activity(Label = "The Governator", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
     public class SplashScreenActivity : Activity
     {
         static readonly string TAG = "X:" + typeof(SplashScreenActivity).Name;

@@ -9,7 +9,7 @@ using Android.Views;
 
 namespace TheGovernator
 {
-    [Activity(Label = "TheGovernator")]
+    [Activity(Label = "The Governator")]
     public class MainActivity : Activity
     {
         protected const string SAVE_SELECTION = "";
@@ -163,17 +163,23 @@ namespace TheGovernator
         private void Button_play_Touch(object sender, View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
-                button_chocolates.SetImageResource(Resource.Drawable.play_icon_X);
+            {
+                Button_play_Click(sender, e);
+                button_play.SetImageResource(Resource.Drawable.play_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
-                button_chocolates.SetImageResource(Resource.Drawable.play_icon);
+                button_play.SetImageResource(Resource.Drawable.play_icon);
         }
 
         // Visual feedback on button presses
         private void Button_chocolates_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_chocolates_Click(sender, e);
                 button_chocolates.SetImageResource(Resource.Drawable.chocolates_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_chocolates.SetImageResource(Resource.Drawable.chocolates_icon);
@@ -182,7 +188,10 @@ namespace TheGovernator
         private void Button_likehome_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_likehome_Click(sender, e);
                 button_likehome.SetImageResource(Resource.Drawable.like_home_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_likehome.SetImageResource(Resource.Drawable.like_home_icon);
@@ -191,8 +200,10 @@ namespace TheGovernator
         private void Button_littlefriend_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_littlefriend_Click(sender, e);
                 button_littlefriend.SetImageResource(Resource.Drawable.little_friend_icon_X);
-
+            }
             if (e.Event.Action == MotionEventActions.Up)
                 button_littlefriend.SetImageResource(Resource.Drawable.little_friend_icon);
         }
@@ -200,7 +211,10 @@ namespace TheGovernator
         private void Button_deadpeople_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_deadpeople_Click(sender, e);
                 button_deadpeople.SetImageResource(Resource.Drawable.dead_people_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_deadpeople.SetImageResource(Resource.Drawable.dead_people_icon);
@@ -209,7 +223,10 @@ namespace TheGovernator
         private void Button_itsme_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_itsme_Click(sender, e);
                 button_itsme.SetImageResource(Resource.Drawable.its_me_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_itsme.SetImageResource(Resource.Drawable.its_me_icon);
@@ -218,7 +235,10 @@ namespace TheGovernator
         private void Button_dreams_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_dreams_Click(sender, e);
                 button_dreams.SetImageResource(Resource.Drawable.dreams_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_dreams.SetImageResource(Resource.Drawable.dreams_icon);
@@ -227,7 +247,10 @@ namespace TheGovernator
         private void Button_neverhungry_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_neverhungry_Click(sender, e);
                 button_neverhungry.SetImageResource(Resource.Drawable.never_hungry_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_neverhungry.SetImageResource(Resource.Drawable.never_hungry_icon);
@@ -236,7 +259,10 @@ namespace TheGovernator
         private void Button_precious_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_precious_Click(sender, e);
                 button_precious.SetImageResource(Resource.Drawable.precious_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_precious.SetImageResource(Resource.Drawable.precious_icon);
@@ -245,7 +271,10 @@ namespace TheGovernator
         private void Button_wakeup_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_wakeup_Click(sender, e);
                 button_wakeup.SetImageResource(Resource.Drawable.wake_up_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_wakeup.SetImageResource(Resource.Drawable.wake_up_icon);
@@ -254,7 +283,10 @@ namespace TheGovernator
         private void Button_gohome_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_gohome_Click(sender, e);
                 button_gohome.SetImageResource(Resource.Drawable.go_home_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_gohome.SetImageResource(Resource.Drawable.go_home_icon);
@@ -263,7 +295,10 @@ namespace TheGovernator
         private void Button_theforce_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_theforce_Click(sender, e);
                 button_theforce.SetImageResource(Resource.Drawable.force_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_theforce.SetImageResource(Resource.Drawable.force_icon);
@@ -272,7 +307,10 @@ namespace TheGovernator
         private void Button_hello_Touch(object sender, Android.Views.View.TouchEventArgs e)
         {
             if (e.Event.Action == MotionEventActions.Down)
+            {
+                Button_hello_Click(sender, e);
                 button_hello.SetImageResource(Resource.Drawable.hello_icon_X);
+            }
 
             if (e.Event.Action == MotionEventActions.Up)
                 button_hello.SetImageResource(Resource.Drawable.hello_icon);
@@ -354,6 +392,8 @@ namespace TheGovernator
         public void StartPlayer(int fileID)
         {
             playerSE = MediaPlayer.Create(this, fileID);
+            playerSE.Completion += PlayerSE_Completion;
+            playerSE.Error += PlayerSE_Error;
 
             if (playerSE.IsPlaying)
             {
@@ -361,6 +401,16 @@ namespace TheGovernator
             }
 
             playerSE.Start();
+        }
+
+        private void PlayerSE_Error(object sender, MediaPlayer.ErrorEventArgs e)
+        {
+            playerSE.Release();
+        }
+
+        private void PlayerSE_Completion(object sender, EventArgs e)
+        {
+            playerSE.Release();
         }
 
         /*  Transition the background
